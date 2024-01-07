@@ -26,7 +26,7 @@ import com.vaadin.flow.server.auth.AnonymousAllowed;
 @AnonymousAllowed
 @PageTitle("Recuperar Credenciales")
 @Route(value = "/recuperarcredenciales")
-public class forgotPasswordView extends VerticalLayout {
+public class ForgotPasswordView extends VerticalLayout {
 
     VerticalLayout bodyDiv, centerDiv, confirmSquare;
     HorizontalLayout titleDiv, footerDiv;
@@ -37,7 +37,7 @@ public class forgotPasswordView extends VerticalLayout {
     private final PasswordEncoder passwordEncoder;
     private final UserEmailService userEmailService;
 
-    public forgotPasswordView(UserService uService, PasswordEncoder pEncoder, UserEmailService uEmailService) {
+    public ForgotPasswordView(UserService uService, PasswordEncoder pEncoder, UserEmailService uEmailService) {
         userService = uService;
         passwordEncoder = pEncoder;
         userEmailService = uEmailService;
