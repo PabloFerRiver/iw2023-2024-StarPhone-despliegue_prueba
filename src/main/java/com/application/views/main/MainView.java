@@ -23,6 +23,7 @@ public class MainView extends VerticalLayout {
     Button butregister, butlogin;
 
     public MainView() {
+        setId("mainView");
         setWidthFull();
         setHeightFull();
         addClassName("mainView");
@@ -33,6 +34,7 @@ public class MainView extends VerticalLayout {
         add(new header());
 
         centerDiv = new VerticalLayout();
+        centerDiv.setId("centerDiv");
         centerDiv.setWidthFull();
         centerDiv.setPadding(false);
         centerDiv.setSpacing(false);
@@ -40,19 +42,23 @@ public class MainView extends VerticalLayout {
         centerDiv.setAlignItems(Alignment.CENTER);
 
         m = new navBar();
+        m.setId("navBar");
         centerDiv.add(m);
 
         intoCenterDiv = new HorizontalLayout();
+        intoCenterDiv.setId("intoCenterDiv");
         intoCenterDiv.setWidth(60, Unit.PERCENTAGE);
         intoCenterDiv.setHeight("250px");
         intoCenterDiv.getStyle().set("background-color", "rgba(255, 255, 255, 0.2)");
 
         leftIntoCenterDiv = new VerticalLayout();
+        leftIntoCenterDiv.setId("leftIntoCenterDiv");
         leftIntoCenterDiv.setWidth(50, Unit.PERCENTAGE);
         leftIntoCenterDiv.setHeightFull();
         leftIntoCenterDiv.setJustifyContentMode(JustifyContentMode.CENTER);
         leftIntoCenterDiv.setAlignItems(Alignment.CENTER);
         butlogin = new Button("Iniciar Sesión");
+        butlogin.setId("butlogin");
         butlogin.addClickListener(e -> UI.getCurrent().getPage().setLocation("/menu"));
         butlogin.addClassName("mainViewButton");
         butlogin.getStyle().set("cursor", "pointer");
@@ -60,11 +66,13 @@ public class MainView extends VerticalLayout {
         intoCenterDiv.add(leftIntoCenterDiv);
 
         rightIntoCenterDiv = new VerticalLayout();
+        rightIntoCenterDiv.setId("rightIntoCenterDiv");
         rightIntoCenterDiv.setWidth(50, Unit.PERCENTAGE);
         rightIntoCenterDiv.setHeightFull();
         rightIntoCenterDiv.setJustifyContentMode(JustifyContentMode.CENTER);
         rightIntoCenterDiv.setAlignItems(Alignment.CENTER);
         butregister = new Button("Registrarse");
+        butregister.setId("butregister");
         butregister.addClickListener(e -> UI.getCurrent().getPage().setLocation("/starphonetarifas"));
         butregister.addClassName("mainViewButton");
         butregister.getStyle().set("cursor", "pointer");
