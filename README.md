@@ -1,4 +1,15 @@
-# My Todo
+# iw2023-2024-StarPhone
+Desarrollo de una app para una operadora virtual de telecomunicaciones (OMV) donde se requiere construir un nuevo software que permita a sus clientes realizar de forma sencilla las gestiones habituales de contratación y consulta de consumos.
+
+## Participantes
+- Pablo Fernández Rivera 
+- Carlos Beltrán Romero 
+- Martín Nieto Pinteño 
+
+## Rúbrica de Auto-evaluación
+https://docs.google.com/spreadsheets/d/1bGOZdtdP_sDQvfPiE4MWxG_Al-saQQta7J35YxnSny0/edit?usp=sharing
+
+## My Todo
 
 This project can be used as a starting point to create your own Vaadin application with Spring Boot.
 It contains all the necessary configuration and some placeholder files to get you started.
@@ -43,3 +54,4 @@ Once the JAR file is built, you can run it using
 - Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
 - Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
 - Report issues, create pull requests in [GitHub](https://github.com/vaadin).
+
